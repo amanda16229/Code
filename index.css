@@ -20,7 +20,6 @@ body {
   left: 0;
   width: 100%;
   background-color: #111;  /* dark header */
-  padding: 10px 20px;
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -29,9 +28,14 @@ body {
 
 .nav-bar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px; /* gap between home and about us links in header */
+  margin: 0 auto; /* center the nav links */
 }
 
 /* Nav links */
@@ -45,7 +49,23 @@ body {
 
 
 .nav-link:hover {
-  color: #132fce;
+  color: #1d59c9;
+}
+
+.nav-discord-button {
+  display: inline-block;
+  background-color: #5865F2; /* Discord blurple */
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-discord-button:hover {
+  background-color: #3b47cf; /* Darker on hover */
 }
 
 /* Discord icon */
@@ -93,12 +113,12 @@ main section p {
 
 /* Optional accent for first section */
 #Content {
-  background-color: #1a1a1a;
+  background-color: #111;
 }
 
 /* Optional accent for story section */
 #Story {
-  background-color: #1a1a1a;
+  background-color: #111;
 }
 
 .osec-logo {
